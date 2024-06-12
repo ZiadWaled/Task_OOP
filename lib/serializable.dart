@@ -27,7 +27,7 @@ class Product implements Serializable {
   }
 }
 void printJson(Serializable serializable) {
-  print('Area: ${serializable.toJson()}');
+  print('Json: ${serializable.toJson()}');
 }
 
 

@@ -1,4 +1,4 @@
-
+import 'package:task_iti_oop/bankAccount.dart';
 import 'package:task_iti_oop/book.dart';
 import 'package:task_iti_oop/serializable.dart';
 import 'package:task_iti_oop/shape.dart';
@@ -26,4 +26,17 @@ void main() {
  Product product = Product('Laptop', 50000);
  printJson(product);
 
+ //Task 5
+ var account = BankAccount();
+ account.deposit(1500);
+
+ try {
+  account.withdraw(1200);
+ } catch (e) {
+  if (e is OverdraftException) {
+   print('Exception: ${e.errorMessage()}');
+  } else {
+   print('Unknown Exception occurred');
+  }
+ }
 }
