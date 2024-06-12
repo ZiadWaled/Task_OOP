@@ -1,5 +1,6 @@
 
 import 'package:task_iti_oop/book.dart';
+import 'package:task_iti_oop/serializable.dart';
 import 'package:task_iti_oop/shape.dart';
 
 void main() {
@@ -13,11 +14,16 @@ void main() {
  novel.displayInfo();
 
  //Task 3
- Circle circle =Circle(r: 10);
- printArea(circle);
+ Circle circle = Circle(r: 10);
+ showArea(circle);
 
- Rectangle r = Rectangle( length: 2, width: 3);
- printArea(r);
+ Rectangle rectangle = Rectangle(length: 4, width: 6);
+ showArea(rectangle);
 
+ //Task 4
+ User user = User('ziad', 'ziadwaled2@gmail.com');
+ printArea(user);
+ Product product = Product('Laptop', 50000);
+ printArea(product);
 
 }
