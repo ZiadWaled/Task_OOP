@@ -28,7 +28,7 @@ void main() {
 
  //Task 5
  var account = BankAccount();
- account.deposit(1500);
+ account.deposit(1000);
 
  try {
   account.withdraw(1200);
