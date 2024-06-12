@@ -22,8 +22,8 @@ void main() {
 
  //Task 4
  User user = User('ziad', 'ziadwaled2@gmail.com');
- printArea(user);
+ printJson(user);
  Product product = Product('Laptop', 50000);
- printArea(product);
+ printJson(product);
 
 }

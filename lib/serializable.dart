@@ -26,7 +26,7 @@ class Product implements Serializable {
     return '{"productName": "$productName", "price": $price}';
   }
 }
-void printArea(Serializable serializable) {
+void printJson(Serializable serializable) {
   print('Area: ${serializable.toJson()}');
 }
 
